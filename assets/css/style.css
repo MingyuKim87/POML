@@ -297,3 +297,70 @@ pre {
     padding: 1.35rem;
   }
 }
+
+
+
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  justify-content: start;
+  gap: 1.4rem;
+}
+
+.member-card {
+  background: var(--surface);
+  border: 1px solid #e3e6ec;
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+.member-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #f5f5f5;
+  margin-bottom: 0.75rem;
+}
+
+.member-card h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.member-position {
+  margin: 0 0 0.22rem;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.member-email {
+  margin: 0 0 0.25rem;
+  font-size: 0.86rem;
+}
+
+.member-email a {
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.member-keywords {
+  margin: 0 0 0.3rem;
+  font-size: 0.76rem;
+  color: #6b7280;
+}
+
+.member-webpage {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+}
