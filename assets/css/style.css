@@ -151,7 +151,14 @@ nav a:hover { color: #fff; border-bottom-color: #fff; }
 .gallery-grid figcaption {
   margin-top: 0.45rem;
   color: #374151;
-  font-size: 0.93rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.gallery-detail {
+  margin: 0.15rem 0 0;
+  font-size: 0.76rem;
+  color: #6b7280;
 }
 
 .site-footer {
