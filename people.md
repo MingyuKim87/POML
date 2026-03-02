@@ -6,7 +6,6 @@ permalink: /people/
 <section class="section" style="margin-top:0;">
   <div class="section-header">
     <h1>People</h1>
-    <p>Current members and collaborators.</p>
   </div>
 
   {% assign principal_investigator_role = site.people | where: 'role', 'Principal Investigator' %}

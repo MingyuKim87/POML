@@ -5,7 +5,6 @@ title: Home
 <section class="hero hero-single">
   <div class="hero-main">
     <div>
-      <span class="hero-kicker">Research Laboratory</span>
       <h1>Probabilistic Objects & Machine Learning (POML)</h1>
       <p class="hero-intro">POML develops dependable AI systems for physical environments. We focus on robust perception, multimodal learning, and practical deployment pathways from lab to field.</p>
     </div>
@@ -26,7 +25,6 @@ title: Home
 <section class="section">
   <div class="section-header">
     <h2>Latest News</h2>
-    <p>Recent lab updates and announcements.</p>
   </div>
   <div class="card-list">
   {% assign sorted_news = site.news | sort: 'date' | reverse %}
@@ -43,7 +41,6 @@ title: Home
 <section class="section">
   <div class="section-header">
     <h2>Selected Publications</h2>
-    <p>Recent representative publications.</p>
   </div>
   <div class="card-list">
   {% assign sorted_pubs = site.publications | sort: 'year' | reverse %}
