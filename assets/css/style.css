@@ -248,3 +248,12 @@ pre {
 .gallery-entry {
   margin: 0;
 }
+
+.news-detail {
+  margin-top: 0.2rem;
+}
+
+.gallery-detail {
+  margin: 0.2rem 0 0;
+  padding-left: 0.3rem;
+}
