@@ -24,8 +24,7 @@ permalink: /news/
 
       <article class="news-entry">
         <h3>{{ item.title }}</h3>
-        <p class="muted">{{ item.date | date: "%Y-%m-%d" }}</p>
-        <p>{{ item.summary }}</p>
+        <p class="member-keywords news-detail">{{ item.summary }}</p>
       </article>
     {% endif %}
   {% endfor %}
