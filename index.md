@@ -6,7 +6,7 @@ title: Home
   <div class="hero-main">
     <div>
       <h1>Probabilistic Machine Learning</h1>
-      <p class="hero-intro">Our lab develops probabilistic methodologies that can faithfully model both safe and unsafe distributions, inspired by Safe AI research such as Safety-Guided Flow and Training-Free Safe Denoiser for safe diffusion model usage. We are actively extending this research toward Vision-Language Models and vision-language action models. We also study neural network methodologies that improve few-shot learning and generalization performance through probabilistic approaches.</p>
+      <p class="hero-intro">Our lab develops probabilistic methodologies that can faithfully model both safe and unsafe distributions. In addition to diffusion/flow matching for image, video, and language models, we are even exploring action models. We are also highly interested in fine-tuning foundation models, including vision-language models and large language models, and in preventing overfitting.</p>
     </div>
 
     <div>
@@ -26,14 +26,11 @@ title: Home
   <div class="section-header">
     <h2>Latest News</h2>
   </div>
-  <div class="card-list">
   {% assign sorted_news = site.news | sort: 'date' | reverse %}
   {% for item in sorted_news limit:3 %}
-    <article class="card">
+    <article class="news-entry">
       <h3>{{ item.title }}</h3>
-      <p class="muted">{{ item.date | date: "%Y-%m-%d" }}</p>
-      <p>{{ item.summary }}</p>
+      <p class="member-keywords news-detail">{{ item.summary }}</p>
     </article>
   {% endfor %}
-  </div>
 </section>
