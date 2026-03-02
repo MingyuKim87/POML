@@ -5,8 +5,8 @@ title: Home
 <section class="hero hero-single">
   <div class="hero-main">
     <div>
-      <h1>Probabilistic Objects & Machine Learning (POML)</h1>
-      <p class="hero-intro">POML develops dependable AI systems for physical environments. We focus on robust perception, multimodal learning, and practical deployment pathways from lab to field.</p>
+      <h1>Probabilistic Machine Learning (PML)</h1>
+      <p class="hero-intro">PML develops dependable AI systems for physical environments. We focus on robust perception, multimodal learning, and practical deployment pathways from lab to field.</p>
     </div>
 
     <div>

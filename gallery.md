@@ -12,7 +12,8 @@ permalink: /gallery/
   {% for image in site.gallery %}
     <figure>
       <img src="{{ image.image }}" alt="{{ image.title }}" />
-      <figcaption>{{ image.title }}</figcaption>
+      <figcaption class="gallery-title">{{ image.title }}</figcaption>
+      {% if image.detail %}<p class="gallery-detail">{{ image.detail }}</p>{% endif %}
     </figure>
   {% endfor %}
   </div>
