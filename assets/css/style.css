@@ -6,7 +6,7 @@
   --line: #b9c6d4;
   --line-strong: #002145;
   --accent: #002145;
-  --max-width: 1120px;
+  --max-width: 100%;
 }
 
 * { box-sizing: border-box; }
@@ -94,7 +94,7 @@ nav a:hover { color: #fff; border-bottom-color: #fff; }
 
 .hero-main { min-height: auto; display: flex; flex-direction: column; gap: 1.2rem; }
 .hero-kicker { display: none; }
-.hero-intro { font-size: 1.08rem; max-width: 58ch; color: #243041; }
+.hero-intro { font-size: 1.08rem; max-width: none; color: #243041; }
 .hero-meta { color: var(--muted); font-size: 0.95rem; }
 
 .info-list {
@@ -247,4 +247,14 @@ pre {
 
 .gallery-entry {
   margin: 0;
+}
+
+.news-detail {
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+}
+
+.gallery-detail {
+  margin: 0.2rem 0 0;
+  padding-left: 0.3rem;
 }
