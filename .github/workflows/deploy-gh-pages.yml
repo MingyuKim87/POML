@@ -21,6 +21,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./
+          enable_jekyll: true
           force_orphan: true
           # NOTE:
           # Do not exclude .git here. peaceiris/actions-gh-pages manages git metadata

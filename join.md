@@ -6,7 +6,6 @@ permalink: /join/
 <section class="section" style="margin-top:0;">
   <div class="section-header">
     <h1>Join POML</h1>
-    <p>Applications are reviewed manually by the lab admin.</p>
   </div>
 
   <article class="card">
