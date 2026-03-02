@@ -5,8 +5,8 @@ title: Home
 <section class="hero hero-single">
   <div class="hero-main">
     <div>
-      <h1>Probabilistic Machine Learning (PML)</h1>
-      <p class="hero-intro">PML develops dependable AI systems for physical environments. We focus on robust perception, multimodal learning, and practical deployment pathways from lab to field.</p>
+      <h1>Probabilistic Machine Learning</h1>
+      <p class="hero-intro">Our lab develops probabilistic methodologies that can faithfully model both safe and unsafe distributions, inspired by Safe AI research such as Safety-Guided Flow and Training-Free Safe Denoiser for safe diffusion model usage. We are actively extending this research toward Vision-Language Models and vision-language action models. We also study neural network methodologies that improve few-shot learning and generalization performance through probabilistic approaches.</p>
     </div>
 
     <div>
@@ -18,7 +18,7 @@ title: Home
       </ul>
     </div>
 
-    <p class="hero-meta">Department of Computer Science · KAIST · Daejeon, Republic of Korea</p>
+    <p class="hero-meta">AI, Kookmin University, Seoul, Republic of Korea</p>
   </div>
 </section>
 
@@ -33,22 +33,6 @@ title: Home
       <h3>{{ item.title }}</h3>
       <p class="muted">{{ item.date | date: "%Y-%m-%d" }}</p>
       <p>{{ item.summary }}</p>
-    </article>
-  {% endfor %}
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-header">
-    <h2>Selected Publications</h2>
-  </div>
-  <div class="card-list">
-  {% assign sorted_pubs = site.publications | sort: 'year' | reverse %}
-  {% for pub in sorted_pubs limit:3 %}
-    <article class="card">
-      <h3>{{ pub.title }}</h3>
-      <p class="muted">{{ pub.authors }} ({{ pub.year }})</p>
-      <p>{{ pub.venue }}</p>
     </article>
   {% endfor %}
   </div>

@@ -1,6 +1,6 @@
 ---
-title: "POML Team Kickoff"
+title: "[2026-03-01] POML Team Kickoff"
 year: 2026
 image: "/assets/images/gallery/poml-kickoff.svg"
-detail: "Lab kickoff meeting"
+detail: "kickoff"
 ---
