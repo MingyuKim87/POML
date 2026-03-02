@@ -6,7 +6,6 @@ permalink: /gallery/
 <section class="section" style="margin-top:0;">
   <div class="section-header">
     <h1>Gallery</h1>
-    <p>Snapshots from lab activities and events.</p>
   </div>
 
   <div class="gallery-grid">
