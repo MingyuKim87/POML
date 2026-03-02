@@ -1,6 +1,6 @@
 ---
 name: Mingyu Kim
-role: Faculty
+role: Principal Investigator
 position: Assistant Professor
 order: 1
 email: mgyukim@kookmin.ac.kr
