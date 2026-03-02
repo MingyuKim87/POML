@@ -9,7 +9,9 @@ permalink: /people/
     <p>Current members and collaborators.</p>
   </div>
 
-  {% assign principal_investigator = site.people | where_exp: 'person', "person.role == 'Principal Investigator' or person.role == 'Faculty'" | sort: 'order' %}
+  {% assign principal_investigator_role = site.people | where: 'role', 'Principal Investigator' %}
+  {% assign faculty_role = site.people | where: 'role', 'Faculty' %}
+  {% assign principal_investigator = principal_investigator_role | concat: faculty_role | sort: 'order' %}
   {% assign graduate_students = site.people | where: 'role', 'Graduate Students' | sort: 'order' %}
   {% assign undergraduate_students = site.people | where: 'role', 'Undergraduate Students' | sort: 'order' %}
 
