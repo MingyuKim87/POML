@@ -11,11 +11,17 @@ permalink: /publications/
 
   {% assign pubs = site.publications | sort: 'year' | reverse %}
   {% for pub in pubs %}
-  <article class="card" style="margin-bottom:0.8rem;">
+  <article class="card publication-card" style="margin-bottom:0.55rem;">
     <h3>{{ pub.title }}</h3>
-    <p class="muted">{{ pub.authors }} ({{ pub.year }})</p>
-    <p>{{ pub.venue }}</p>
-    {% if pub.link %}<p><a href="{{ pub.link }}" target="_blank" rel="noopener">Paper Link</a></p>{% endif %}
+    <p class="muted pub-authors">{{ pub.authors }}</p>
+    <p class="pub-venue">{{ pub.venue }}</p>
+    {% if pub.paper or pub.code %}
+    <p class="pub-links">
+      {% if pub.paper %}<a href="{{ pub.paper }}" target="_blank" rel="noopener">paper</a>{% endif %}
+      {% if pub.paper and pub.code %} · {% endif %}
+      {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">code</a>{% endif %}
+    </p>
+    {% endif %}
   </article>
   {% endfor %}
 </section>
