@@ -8,5 +8,5 @@ keywords:
   - Safe AI
   - Probabilistic Models
 webpage: "https://mingyukim87.github.io"
-photo: "/assets/images/people/mingyu-kim.jpg"
+photo: "/assets/images/people/placeholder.svg"
 ---
