@@ -2,24 +2,25 @@
 title: Home
 ---
 
-<section class="hero">
+<section class="hero hero-single">
   <div class="hero-main">
     <div>
       <span class="hero-kicker">Research Laboratory</span>
-      <h1>Precision Objects & Machine Learning (POML)</h1>
+      <h1>Probabilistic Objects & Machine Learning (POML)</h1>
       <p class="hero-intro">POML develops dependable AI systems for physical environments. We focus on robust perception, multimodal learning, and practical deployment pathways from lab to field.</p>
     </div>
+
+    <div>
+      <h3>Research Highlights</h3>
+      <ul class="info-list">
+        <li>Reliable perception in uncertain visual conditions</li>
+        <li>Human-in-the-loop machine learning</li>
+        <li>Data-centric evaluation for deployment safety</li>
+      </ul>
+    </div>
+
     <p class="hero-meta">Department of Computer Science · KAIST · Daejeon, Republic of Korea</p>
   </div>
-
-  <aside class="hero-aside">
-    <h3>Research Highlights</h3>
-    <ul class="info-list">
-      <li>Reliable perception in uncertain visual conditions</li>
-      <li>Human-in-the-loop machine learning</li>
-      <li>Data-centric evaluation for deployment safety</li>
-    </ul>
-  </aside>
 </section>
 
 <section class="section">
