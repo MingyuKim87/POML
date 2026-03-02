@@ -20,8 +20,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
+          publish_dir: ./
           force_orphan: true
+          # NOTE:
+          # Do not exclude .git here. peaceiris/actions-gh-pages manages git metadata
+          # internally while creating the publish commit. Excluding .git can cause
+          # "fatal: not a git repository" errors during remote setup.
           exclude_assets: |
-            .git
             .github
