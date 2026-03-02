@@ -213,7 +213,7 @@ pre {
 
 .pub-year-heading h2 {
   margin: 0;
-  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  font-size: clamp(2rem, 3.7vw, 3.4rem);
 }
 
 .pub-year-heading .line {
@@ -236,4 +236,15 @@ pre {
   .site-header-inner { flex-direction: column; align-items: flex-start; }
   nav { gap: 0.65rem; }
   .people-grid { grid-template-columns: 1fr; }
+}
+
+
+.news-entry {
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.gallery-entry {
+  margin: 0;
 }

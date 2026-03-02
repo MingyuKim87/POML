@@ -8,13 +8,31 @@ permalink: /gallery/
     <h1>Gallery</h1>
   </div>
 
-  <div class="gallery-grid">
-  {% for image in site.gallery %}
-    <figure>
-      <img src="{{ image.image }}" alt="{{ image.title }}" />
-      <figcaption class="gallery-title">{{ image.title }}</figcaption>
-      {% if image.detail %}<p class="gallery-detail">{{ image.detail }}</p>{% endif %}
-    </figure>
+  {% assign gallery_list = site.gallery | sort: 'year' | reverse %}
+  {% assign previous_year = '' %}
+
+  {% for image in gallery_list %}
+    {% assign image_year = image.year | append: '' %}
+    {% if image_year >= '2026' %}
+      {% if image_year != previous_year %}
+      <div class="pub-year-heading">
+        <h2>{{ image_year }}</h2>
+        <div class="line"></div>
+      </div>
+      <div class="gallery-grid" style="margin-bottom:1.3rem;">
+      {% assign previous_year = image_year %}
+      {% endif %}
+
+      <figure class="gallery-entry">
+        <img src="{{ image.image }}" alt="{{ image.title }}" />
+        <figcaption>{{ image.title }}</figcaption>
+      </figure>
+
+      {% assign next_index = forloop.index %}
+      {% assign next_item = gallery_list[next_index] %}
+      {% if next_item == nil or next_item.year != image.year %}
+      </div>
+      {% endif %}
+    {% endif %}
   {% endfor %}
-  </div>
 </section>
