@@ -26,6 +26,9 @@ permalink: /gallery/
       <figure class="gallery-entry">
         <img src="{{ image.image }}" alt="{{ image.title }}" />
         <figcaption>{{ image.title }}</figcaption>
+        {% if image.detail %}
+        <p class="member-keywords gallery-detail">{{ image.detail }}</p>
+        {% endif %}
       </figure>
 
       {% assign next_index = forloop.index %}

@@ -8,11 +8,11 @@ permalink: /people/
     <h1>People</h1>
   </div>
 
-  {% assign principal_investigator_role = site.people | where: 'role', 'Principal Investigator' %}
-  {% assign faculty_role = site.people | where: 'role', 'Faculty' %}
+  {% assign principal_investigator_role = site.people | where_exp: 'person', "person.role == 'Principal Investigator' and person.template != true" %}
+  {% assign faculty_role = site.people | where_exp: 'person', "person.role == 'Faculty' and person.template != true" %}
   {% assign principal_investigator = principal_investigator_role | concat: faculty_role | sort: 'order' %}
-  {% assign graduate_students = site.people | where: 'role', 'Graduate Students' | sort: 'order' %}
-  {% assign undergraduate_students = site.people | where: 'role', 'Undergraduate Students' | sort: 'order' %}
+  {% assign graduate_students = site.people | where_exp: 'person', "person.role == 'Graduate Students' and person.template != true" | sort: 'order' %}
+  {% assign undergraduate_students = site.people | where_exp: 'person', "person.role == 'Undergraduate Students' and person.template != true" | sort: 'order' %}
 
   {% if principal_investigator.size > 0 %}
   <h2>Principal Investigator</h2>
@@ -55,7 +55,7 @@ permalink: /people/
   {% endif %}
 
   {% if undergraduate_students.size > 0 %}
-  <h2>Undergraduate Students</h2>
+  <h2 class="undergraduate-heading">Undergraduate Students</h2>
   <div class="people-grid" style="margin-bottom:1.2rem;">
     {% for member in undergraduate_students %}
     <article class="member-card">

@@ -1,5 +1,5 @@
 ---
-title: "POML website launched on GitHub Pages"
+title: "[2026-03-01] PML has launched in Department of AI at Kookmin University"
 date: 2026-03-01
-summary: "We launched the first version of the lab website with People, Publications, News, Gallery, Join, and Admin pages."
+summary: "Prof. Mingyu Kim appointed as Assistant Professor in the Department of AI at Kookmin University"
 ---
