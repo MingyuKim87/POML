@@ -63,3 +63,12 @@ photo: "/assets/images/people/your-photo.jpg"
 ## Logo
 Add your logo image at:
 - `assets/images/logo.png`
+
+## Local build / error troubleshooting
+If GitHub Pages build logs stop during `Reading:` or local `jekyll` commands fail, use Bundler with the repository Gemfile:
+
+1. `bundle install`
+2. `bundle exec jekyll build`
+3. `bundle exec jekyll serve --livereload`
+
+This repo now includes a `Gemfile` pinned to the GitHub Pages gem set (`github-pages` v232-compatible), which matches the build stack shown in Pages logs.
