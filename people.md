@@ -55,7 +55,7 @@ permalink: /people/
   {% endif %}
 
   {% if undergraduate_students.size > 0 %}
-  <h2>Undergraduate Students</h2>
+  <h2 class="undergraduate-heading">Undergraduate Students</h2>
   <div class="people-grid" style="margin-bottom:1.2rem;">
     {% for member in undergraduate_students %}
     <article class="member-card">
