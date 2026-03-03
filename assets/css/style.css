@@ -241,6 +241,7 @@ pre {
 }
 
 .pub-title { margin-bottom: 0.25rem; }
+.pub-venue { font-family: var(--serif); }
 .pub-authors,
 .pub-venue,
 .pub-links { margin-bottom: 0.2rem; }
