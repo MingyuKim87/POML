@@ -142,8 +142,9 @@ nav a:hover { color: #fff; border-bottom-color: #fff; }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  justify-content: start;
+  gap: 1.2rem;
 }
 
 .gallery-grid img {
