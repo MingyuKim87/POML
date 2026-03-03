@@ -1,4 +1,7 @@
 ---
+# Template placeholder (hidden from deployed People page)
+published: false
+template: true
 name: Jane Doe
 role: Graduate Students
 position: M.S. Student
