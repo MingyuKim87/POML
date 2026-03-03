@@ -23,7 +23,7 @@ permalink: /gallery/
     {% endif %}
 
       <figure class="gallery-entry">
-        <img src="{{ image.image }}" alt="{{ image.title }}" />
+        <img src="{{ image.image | relative_url }}" alt="{{ image.title }}" />
         <figcaption>{{ image.title }}</figcaption>
         {% if image.detail %}
         <p class="member-keywords gallery-detail">{{ image.detail }}</p>
