@@ -9,7 +9,11 @@ permalink: /join/
   </div>
 
   <article class="card">
-    <p>We accept applications from students and interns by email.</p>
+    <p>We welcome applications from students and interns by email.</p>
+    <ul>
+      <li><strong>Undergraduate Students:</strong> We warmly welcome your applications.</li>
+      <li><strong>Graduate Students:</strong> <strong>Please contact us only after your admission has been officially confirmed.</strong></li>
+    </ul>
     <h3>How to apply</h3>
     <ul>
       <li>Send CV, transcript, and a short statement of purpose.</li>
