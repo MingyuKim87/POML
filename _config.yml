@@ -1,0 +1,25 @@
+title: PML
+email: admin@example.com
+description: >-
+  POML Lab website powered by GitHub Pages and Markdown.
+
+# IMPORTANT: project site (username.github.io/REPO)
+url: "https://mingyukim87.github.io"
+baseurl: "/POML"
+
+markdown: kramdown
+permalink: pretty
+collections:
+  people:
+    output: false
+  publications:
+    output: false
+  news:
+    output: false
+  gallery:
+    output: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
