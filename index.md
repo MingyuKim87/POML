@@ -6,7 +6,7 @@ title: Home
   <div class="hero-main">
     <div>
       <h1>Probabilistic Machine Learning Lab</h1>
-      <p class="hero-intro">Our lab develops probabilistic methods to AI model both safe and unsafe distributions, with a focus on controlling generation toward safe outcomes. We study diffusion and flow-matching frameworks for image, video, and language models, and are extending these ideas to action models. We are also deeply interested in fine-tuning foundation models, including vision-language models and large language models, while mitigating overfitting, and we consider trustworthiness and reliability as core research directions.</p>
+      <p class="hero-intro">Our lab develops probabilistic methods for modeling both safe and unsafe distributions in AI, with the goal of controlling generation toward safe and reliable outcomes. Our research centers on diffusion and flow-matching frameworks for image, video, and language models, and we are actively extending these ideas to action models. We also study the fine-tuning of foundation models, including vision-language models and large language models, with particular attention to mitigating overfitting. Across these areas, trustworthiness and reliability serve as core principles shaping our research.</p>
     </div>
 
     <div>
