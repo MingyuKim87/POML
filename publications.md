@@ -21,7 +21,7 @@ permalink: /publications/
     {% if pub.year == year %}
     <article class="pub-entry">
       <h3 class="pub-title">{{ pub.title }}</h3>
-      <p class="muted pub-authors">{{ pub.authors }}</p>
+      <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
       <p class="pub-venue">{{ pub.venue }}</p>
       {% if pub.paper or pub.code %}
       <p class="pub-links">
