@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}" />
   </head>
   <body>
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="brand" href="{{ '/' | relative_url }}">
-          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="PML logo" onerror="this.style.display='none';document.getElementById('brand-fallback').style.display='inline-block';" />
+        <a class="brand" href="{{ '/' | absolute_url }}">
+          <img src="{{ '/assets/images/logo.png' | absolute_url }}" alt="PML logo" onerror="this.style.display='none';document.getElementById('brand-fallback').style.display='inline-block';" />
           <span id="brand-fallback" class="brand-fallback" style="display:none;">PML</span>
           <span class="brand-text">
             <span class="brand-title">PML</span>
@@ -22,11 +22,11 @@
           </span>
         </a>
         <nav>
-          <a href="{{ '/people/' | relative_url }}">people</a>
-          <a href="{{ '/publications/' | relative_url }}">publications</a>
-          <a href="{{ '/news/' | relative_url }}">news</a>
-          <a href="{{ '/gallery/' | relative_url }}">gallery</a>
-          <a href="{{ '/join/' | relative_url }}">join</a>
+          <a href="{{ '/people/' | absolute_url }}">people</a>
+          <a href="{{ '/publications/' | absolute_url }}">publications</a>
+          <a href="{{ '/news/' | absolute_url }}">news</a>
+          <a href="{{ '/gallery/' | absolute_url }}">gallery</a>
+          <a href="{{ '/join/' | absolute_url }}">join</a>
         </nav>
       </div>
     </header>
