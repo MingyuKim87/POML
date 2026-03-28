@@ -21,11 +21,17 @@ permalink: /publications/
     {% if pub.year == year %}
     <article class="pub-entry">
       <h3 class="pub-title">{{ pub.title }}</h3>
-      <p class="muted pub-authors">{{ pub.authors }}</p>
+      <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
       <p class="pub-venue">{{ pub.venue }}</p>
       {% if pub.paper or pub.code %}
       <p class="pub-links">
-        {% if pub.paper %}<a href="{{ pub.paper }}" target="_blank" rel="noopener">[paper]</a>{% endif %}
+        {% if pub.paper %}
+          {% if pub.paper contains '://' %}
+            <a href="{{ pub.paper }}" target="_blank" rel="noopener">[paper]</a>
+          {% else %}
+            {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
+          {% endif %}
+        {% endif %}
         {% if pub.paper and pub.code %} {% endif %}
         {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
       </p>
