@@ -272,3 +272,36 @@ pre {
   margin: 0.2rem 0 0;
   padding-left: 0.3rem;
 }
+
+@media (min-width: 1200px) {
+  .site-header-inner,
+  .container,
+  .site-footer-inner {
+    max-width: 1180px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero-main,
+  .news-entry,
+  .pub-entry,
+  .card {
+    max-width: 920px;
+  }
+
+  .hero-intro {
+    max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.75;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
+    gap: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+    gap: 1.4rem;
+  }
+}
