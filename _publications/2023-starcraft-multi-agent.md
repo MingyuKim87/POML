@@ -3,6 +3,6 @@ title: "The StarCraft Multi-Agent Exploration Challenges : Learning Multi-Stage 
 authors: "Mingyu Kim*, Jihwan Oh*, Yongsik Lee, Joonkee Kim, SeongHwan Kim, Song Chong and Se-Young Yun"
 year: 2023
 venue: "IEEE Access, Vol. 11, 2023"
-paper: "https://mingyukim87.github.io"
-code: "https://mingyukim87.github.io"
+paper: "https://ieeexplore.ieee.org/document/10099458"
+code: "https://github.com/osilab-kaist/smac_exp"
 ---
