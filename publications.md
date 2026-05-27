@@ -69,4 +69,5 @@ permalink: /publications/
   {% endfor %}
   {% endif %}
   {% endfor %}
+{% endfor %}
 </section>
