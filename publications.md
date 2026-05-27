@@ -61,7 +61,6 @@ permalink: /publications/
             {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
           {% endif %}
         {% endif %}
-        {% if pub.paper and pub.code %} {% endif %}
         {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
       </p>
       {% endif %}
