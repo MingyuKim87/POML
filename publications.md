@@ -19,25 +19,31 @@ permalink: /publications/
 
   {% for pub in pubs %}
     {% if pub.year == year %}
-    <article class="pub-entry">
-      <h3 class="pub-title">{{ pub.title }}</h3>
-      <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
-      <p class="pub-venue">{{ pub.venue }}</p>
-      {% if pub.paper or pub.code %}
-      <p class="pub-links">
-        {% if pub.paper %}
-          {% if pub.paper contains '://' %}
-            <a href="{{ pub.paper }}" target="_blank" rel="noopener">[paper]</a>
-          {% else %}
-            {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        {% endif %}
-        {% if pub.paper and pub.code %} {% endif %}
-        {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
-      </p>
-      {% endif %}
-    </article>
+      {% unless pub.category == 'workshop' %}
+        {% include publication-entry.html pub=pub %}
+      {% endunless %}
     {% endif %}
   {% endfor %}
+
+  {% capture workshop_entries %}
+    {% for pub in pubs %}
+      {% if pub.year == year %}
+        {% if pub.category == 'workshop' %}
+          {% include publication-entry.html pub=pub %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% assign workshop_entries = workshop_entries | strip %}
+
+  {% if workshop_entries != '' %}
+  <div class="pub-subheading">
+    <h3>Workshop</h3>
+    <div class="line"></div>
+  </div>
+
+  {{ workshop_entries }}
+  {% endif %}
+
   {% endfor %}
 </section>
