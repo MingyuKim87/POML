@@ -23,6 +23,9 @@ jobs:
           publish_dir: ./
           enable_jekyll: true
           force_orphan: true
-          # Keep workflow files out of published branch.
+          # NOTE:
+          # Do not exclude .git here. peaceiris/actions-gh-pages manages git metadata
+          # internally while creating the publish commit. Excluding .git can cause
+          # "fatal: not a git repository" errors during remote setup.
           exclude_assets: |
             .github
