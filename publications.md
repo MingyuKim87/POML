@@ -17,10 +17,8 @@ permalink: /publications/
     <div class="line"></div>
   </div>
 
-  {% assign main_pubs = pubs | where: 'year', year | where_exp: 'item', "item.category != 'workshop'" %}
-  {% assign workshop_pubs = pubs | where: 'year', year | where: 'category', 'workshop' %}
-
-  {% for pub in main_pubs %}
+  {% for pub in pubs %}
+    {% if pub.year == year and pub.category != 'workshop' %}
     <article class="pub-entry">
       <h3 class="pub-title">{{ pub.title }}</h3>
       <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
@@ -34,19 +32,29 @@ permalink: /publications/
             {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
           {% endif %}
         {% endif %}
+        {% if pub.paper and pub.code %} {% endif %}
         {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
       </p>
       {% endif %}
     </article>
+    {% endif %}
   {% endfor %}
 
-  {% if workshop_pubs.size > 0 %}
+  {% assign has_workshop = false %}
+  {% for pub in pubs %}
+    {% if pub.year == year and pub.category == 'workshop' %}
+      {% assign has_workshop = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_workshop %}
   <div class="pub-subheading">
     <h3>Workshop</h3>
     <div class="line"></div>
   </div>
 
-  {% for pub in workshop_pubs %}
+  {% for pub in pubs %}
+    {% if pub.year == year and pub.category == 'workshop' %}
     <article class="pub-entry">
       <h3 class="pub-title">{{ pub.title }}</h3>
       <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
@@ -60,13 +68,14 @@ permalink: /publications/
             {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
           {% endif %}
         {% endif %}
+        {% if pub.paper and pub.code %} {% endif %}
         {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
       </p>
       {% endif %}
     </article>
+    {% endif %}
   {% endfor %}
   {% endif %}
 
   {% endfor %}
-{% endfor %}
 </section>
