@@ -22,6 +22,14 @@ title: Home
   </div>
 </section>
 
+<section class="home-calendar-link" aria-labelledby="home-calendar-title">
+  <div>
+    <h2 id="home-calendar-title">Calendar</h2>
+    <p>Check Mingyu's monthly availability before arranging a meeting.</p>
+  </div>
+  <a class="calendar-link-button" href="{{ '/calendar/' | relative_url }}">View calendar <span aria-hidden="true">&rarr;</span></a>
+</section>
+
 <section class="section">
   <div class="section-header">
     <h2>Latest News</h2>
