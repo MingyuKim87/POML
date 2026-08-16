@@ -24,7 +24,7 @@ title: Home
 
 <section class="home-calendar-link" aria-labelledby="home-calendar-title">
   <div>
-    <h2 id="home-calendar-title">Calendar</h2>
+    <p id="home-calendar-title" class="home-calendar-title"><strong>Calendar</strong></p>
     <p>Check Mingyu's monthly availability before arranging a meeting.</p>
   </div>
   <a class="calendar-link-button" href="{{ '/calendar/' | relative_url }}">View calendar <span aria-hidden="true">&rarr;</span></a>

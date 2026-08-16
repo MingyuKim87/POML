@@ -5,11 +5,8 @@ permalink: /calendar/
 
 <section class="section calendar-section" style="margin-top:0;">
   <div class="section-header calendar-page-header">
-    <div>
-      <h1>Calendar</h1>
-      <p class="calendar-intro">Mingyu Kim's monthly availability</p>
-    </div>
-    <a class="calendar-email" href="mailto:mgyukim@kookmin.ac.kr">mgyukim@kookmin.ac.kr</a>
+    <h1>Calendar</h1>
+    <p class="calendar-intro">Mingyu Kim's monthly availability</p>
   </div>
 
   <p class="calendar-privacy-note">Calendar entries are displayed as busy to protect event details.</p>
@@ -17,7 +14,10 @@ permalink: /calendar/
   <div class="calendar-embed">
     <iframe
       title="Mingyu Kim's monthly availability calendar"
-      src="https://calendar.google.com/calendar/embed?src=mgyukim%40kookmin.ac.kr&amp;ctz=Asia%2FSeoul&amp;mode=MONTH&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
+      src="https://calendar.google.com/calendar/embed?src=mgyukim%40kookmin.ac.kr&amp;ctz=Asia%2FSeoul"
+      style="border: 0"
+      width="800"
+      height="600"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
       frameborder="0"
