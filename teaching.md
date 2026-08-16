@@ -9,32 +9,24 @@ permalink: /teaching/
   </div>
 
   <div class="pub-subheading">
-    <h3>2026 Spring</h3>
-    <div class="line"></div>
-  </div>
-
-  <article class="pub-entry">
-    <h3 class="pub-title">AI Platform</h3>
-  </article>
-  <article class="pub-entry">
-    <h3 class="pub-title">AIX</h3>
-  </article>
-  <article class="pub-entry">
-    <h3 class="pub-title">AI</h3>
-  </article>
-
-  <div class="pub-subheading">
     <h3>2026 Fall</h3>
     <div class="line"></div>
   </div>
 
-  <article class="pub-entry">
-    <h3 class="pub-title">Linear Algebra</h3>
-  </article>
-  <article class="pub-entry">
-    <h3 class="pub-title">C++ Programming</h3>
-  </article>
-  <article class="pub-entry">
-    <h3 class="pub-title">Dance and AI</h3>
-  </article>
+  <div class="teaching-course-list">
+    <p class="teaching-course">Linear Algebra</p>
+    <p class="teaching-course">C++ Programming</p>
+    <p class="teaching-course">Dance and AI <span class="course-note">(for Graduate Students)</span></p>
+  </div>
+
+  <div class="pub-subheading">
+    <h3>2026 Spring</h3>
+    <div class="line"></div>
+  </div>
+
+  <div class="teaching-course-list">
+    <p class="teaching-course">AI Platform</p>
+    <p class="teaching-course">AIX</p>
+    <p class="teaching-course">Deep Learning <span class="course-note">(for Graduate Students)</span></p>
+  </div>
 </section>

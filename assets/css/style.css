@@ -347,6 +347,22 @@ pre {
 .pub-venue,
 .pub-links { margin-bottom: 0.2rem; }
 
+.teaching-course-list {
+  margin: 0 0 1.6rem;
+  padding-left: 0.1rem;
+}
+
+.teaching-course {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.course-note {
+  color: var(--muted);
+  font-size: 0.78em;
+}
+
 @media (max-width: 760px) {
   .site-header-inner { flex-direction: column; align-items: flex-start; }
   nav { gap: 0.65rem; }
