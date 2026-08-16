@@ -108,6 +108,91 @@ nav a:hover { color: #fff; border-bottom-color: #fff; }
 }
 .hero-meta { color: var(--muted); font-size: 0.95rem; }
 
+.home-calendar-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-top: 2.6rem;
+  padding: 1.15rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.home-calendar-link h2,
+.home-calendar-link p {
+  margin: 0;
+}
+
+.home-calendar-link h2 {
+  font-size: 1.35rem;
+}
+
+.home-calendar-link p {
+  color: var(--muted);
+  font-family: var(--serif);
+}
+
+.calendar-link-button {
+  flex: 0 0 auto;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.55rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.calendar-page-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.calendar-intro,
+.calendar-email,
+.calendar-privacy-note,
+.calendar-help {
+  color: var(--muted);
+}
+
+.calendar-intro {
+  margin: 0;
+  font-family: var(--serif);
+}
+
+.calendar-email {
+  margin-bottom: 0.35rem;
+  white-space: nowrap;
+}
+
+.calendar-privacy-note {
+  margin: 1rem 0;
+  font-size: 0.92rem;
+}
+
+.calendar-embed {
+  position: relative;
+  width: 100%;
+  height: min(760px, calc(100vh - 180px));
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.calendar-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.calendar-help {
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+}
+
 .info-list {
   list-style: none;
   padding: 0;
@@ -235,6 +320,7 @@ pre {
   flex: 1;
 }
 
+
 .pub-subheading {
   display: flex;
   align-items: center;
@@ -269,6 +355,9 @@ pre {
   .site-header-inner { flex-direction: column; align-items: flex-start; }
   nav { gap: 0.65rem; }
   .people-grid { grid-template-columns: 1fr; }
+  .home-calendar-link,
+  .calendar-page-header { align-items: flex-start; flex-direction: column; }
+  .calendar-embed { height: 680px; min-height: 0; }
 }
 
 
