@@ -108,6 +108,87 @@ nav a:hover { color: #fff; border-bottom-color: #fff; }
 }
 .hero-meta { color: var(--muted); font-size: 0.95rem; }
 
+.home-calendar-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin: 1.8rem 1rem 0;
+  padding: 1rem 0.85rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.home-calendar-link p {
+  margin: 0 0 0.25rem;
+}
+
+.home-calendar-title {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.home-calendar-link p:not(.home-calendar-title) {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 0.92rem;
+}
+
+.calendar-link-button {
+  flex: 0 0 auto;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.55rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.home-calendar-link + .section {
+  margin-top: 1.6rem;
+}
+
+.calendar-page-header {
+  display: block;
+}
+
+.calendar-intro,
+.calendar-privacy-note,
+.calendar-help {
+  color: var(--muted);
+}
+
+.calendar-intro {
+  margin: 0;
+  font-family: var(--serif);
+}
+
+.calendar-privacy-note {
+  margin: 1rem 0;
+  font-size: 0.92rem;
+}
+
+.calendar-embed {
+  position: relative;
+  width: 100%;
+  height: min(760px, calc(100vh - 180px));
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.calendar-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.calendar-help {
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+}
+
 .info-list {
   list-style: none;
   padding: 0;
@@ -235,6 +316,26 @@ pre {
   flex: 1;
 }
 
+
+.pub-subheading {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0 0.9rem;
+}
+
+.pub-subheading h3 {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.1vw, 1.45rem);
+  font-weight: 700;
+}
+
+.pub-subheading .line {
+  height: 1px;
+  background: var(--line);
+  flex: 1;
+}
+
 .pub-entry {
   margin: 0 0 2rem;
   padding-left: 0.1rem;
@@ -246,10 +347,34 @@ pre {
 .pub-venue,
 .pub-links { margin-bottom: 0.2rem; }
 
+.teaching-course-list {
+  margin: 0 0 1.6rem;
+  padding-left: 0.1rem;
+}
+
+.teaching-course {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.course-note {
+  color: #6b7280;
+  font-size: 0.76rem;
+  font-weight: 400;
+}
+
 @media (max-width: 760px) {
   .site-header-inner { flex-direction: column; align-items: flex-start; }
   nav { gap: 0.65rem; }
   .people-grid { grid-template-columns: 1fr; }
+  .home-calendar-link {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+  }
+  .calendar-embed { height: 680px; min-height: 0; }
 }
 
 
