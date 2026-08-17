@@ -10,11 +10,12 @@ title: Home
     </div>
 
     <div>
-      <h3>Research Highlights</h3>
+      <h3>Research Focus</h3>
       <ul class="info-list">
-        <li>Probabilistic approaches for generative AI</li>
-        <li>Safe AI grounded in probabilistic modeling</li>
-        <li>Mitigating overfitting during post-training of foundation models</li>
+        <li><strong>Probabilistic Generative Modeling:</strong> diffusion, flow matching, and neural processes</li>
+        <li><strong>Safe and Controllable Generative AI:</strong> negative guidance and inference-time steering</li>
+        <li><strong>Reliable Foundation Model Adaptation:</strong> Bayesian post-training and generalization</li>
+        <li><strong>Multimodal and 3D Intelligence:</strong> vision-language learning and neural representations</li>
       </ul>
     </div>
 

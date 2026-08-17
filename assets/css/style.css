@@ -359,8 +359,9 @@ pre {
 }
 
 .course-note {
-  color: var(--muted);
-  font-size: 0.78em;
+  color: #6b7280;
+  font-size: 0.76rem;
+  font-weight: 400;
 }
 
 @media (max-width: 760px) {
