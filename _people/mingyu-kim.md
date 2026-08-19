@@ -5,8 +5,7 @@ position: Assistant Professor
 order: 1
 email: mgyukim@kookmin.ac.kr
 keywords:
-  - Safe AI
-  - Probabilistic Models
+  - "Controllable Generative AI · Reliable Foundation Models<br>Probabilistic Modeling · Multimodal & 3D Intelligence"
 webpage: "https://mingyukim87.github.io"
 photo: "/assets/images/people/mingyu-kim.jpg"
 ---
