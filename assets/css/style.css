@@ -296,6 +296,7 @@ pre {
 .member-email { margin: 0 0 0.25rem; font-size: 0.86rem; }
 .member-email a { color: var(--accent); text-decoration: none; }
 .member-keywords { margin: 0 0 0.3rem; font-size: 0.76rem; color: #6b7280; }
+.member-keyword-line { display: block; white-space: nowrap; }
 .member-webpage { margin: 0; font-size: 0.84rem; font-weight: 600; }
 
 .pub-year-heading {
