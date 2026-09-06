@@ -14,8 +14,8 @@ permalink: /teaching/
   </div>
 
   <div class="teaching-course-list">
-    <p class="teaching-course">Linear Algebra</p>
-    <p class="teaching-course">C++ Programming</p>
+    <p class="teaching-course"><a href="https://mingyukim87.github.io/lec-linear-algebra2026/" target="_blank" rel="noopener">Linear Algebra</a></p>
+    <p class="teaching-course"><a href="https://mingyukim87.github.io/lec-cpp2026/" target="_blank" rel="noopener">C++ Programming</a></p>
     <p class="teaching-course">Dance and AI <span class="course-note">(for Graduate Students)</span></p>
   </div>
 
