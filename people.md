@@ -24,7 +24,9 @@ permalink: /people/
       <p class="member-position">{{ member.position }}</p>
       <p class="member-email"><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
       {% if member.keywords %}
-      <p class="member-keywords">{{ member.keywords | slice: 0, 3 | join: ", " }}</p>
+      <ul class="member-keywords member-keyword-list">
+        {% for keyword in member.keywords %}<li class="member-keyword-line">{{ keyword }}</li>{% endfor %}
+      </ul>
       {% endif %}
       {% if member.webpage %}
       <p class="member-webpage"><a href="{{ member.webpage }}" target="_blank" rel="noopener">Webpage</a></p>
