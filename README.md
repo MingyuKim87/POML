@@ -62,7 +62,7 @@ photo: "/assets/images/people/your-photo.jpg"
 
 ## Logo
 Add your logo image at:
-- `assets/images/logo.png`
+- `assets/images/logo.svg`
 
 ## Local build / error troubleshooting
 If GitHub Pages build logs stop during `Reading:` or local `jekyll` commands fail, use Bundler with the repository Gemfile:
