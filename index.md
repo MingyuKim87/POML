@@ -5,8 +5,8 @@ title: Home
 <section class="hero hero-single">
   <div class="hero-main">
     <div>
-      <h1>Probabilistic Machine Learning Lab.</h1>
-      <p class="hero-intro">Our lab develops probabilistic methods for modeling both safe and unsafe distributions in AI, with the goal of controlling generation toward safe and reliable outcomes. Our research centers on diffusion and flow-matching frameworks for image, video, and language models, and we are actively extending these ideas to action models. We also study the fine-tuning of foundation models, including vision-language models and large language models, with particular attention to mitigating overfitting. Across these areas, trustworthiness and reliability serve as core principles shaping our research.</p>
+      <h1>Applied and Probabilistic Machine Learning Lab.</h1>
+      <p class="hero-intro">Our lab develops probabilistic AI methods for industrial and manufacturing problems, spanning theoretical foundations through real-world applications. In these settings, model failures can lead to substantial losses and negative consequences, making uncertainty, robustness, and reliability central requirements rather than optional properties. We study how to remove unsafe distributions, construct robust generative and foundation models, and enable trustworthy learning and serving when domain-specific data are available. Our research brings together diffusion and flow matching, Bayesian post-training, multimodal and 3D reasoning, and foundation-model adaptation. Across these areas, we aim to translate principled probabilistic modeling into safe, controllable, and practical AI systems for industry.</p>
     </div>
 
     <div>
@@ -16,6 +16,7 @@ title: Home
         <li><strong>Safe and Controllable Generative AI:</strong> negative guidance and inference-time steering</li>
         <li><strong>Reliable Foundation Model Adaptation:</strong> Bayesian post-training and generalization</li>
         <li><strong>Multimodal and 3D Intelligence:</strong> vision-language learning and neural representations</li>
+        <li><strong>Industrial Applications:</strong> industrial foundation models and visual reasoning</li>
       </ul>
     </div>
 
