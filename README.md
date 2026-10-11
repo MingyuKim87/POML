@@ -1,4 +1,4 @@
-# POML Lab Website (GitHub Pages)
+# A_Pro Lab Website (GitHub Pages)
 
 This repository is configured for a **database-free** GitHub Pages website using Markdown/YAML content files.
 

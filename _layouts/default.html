@@ -14,18 +14,20 @@
     <header class="site-header">
       <div class="site-header-inner">
         <a class="brand" href="{{ '/' | absolute_url }}">
-          <img src="{{ '/assets/images/logo.png' | absolute_url }}" alt="PML logo" onerror="this.style.display='none';document.getElementById('brand-fallback').style.display='inline-block';" />
-          <span id="brand-fallback" class="brand-fallback" style="display:none;">PML</span>
+          <img src="{{ '/assets/images/logo.svg' | absolute_url }}" alt="A Pro logo" onerror="this.style.display='none';document.getElementById('brand-fallback').style.display='inline-block';" />
+          <span id="brand-fallback" class="brand-fallback" style="display:none;">A Pro</span>
           <span class="brand-text">
-            <span class="brand-title">PML</span>
-            <span class="brand-subtitle">Probabilistic Machine Learning Lab</span>
+            <span class="brand-title">A_Pro</span>
+            <span class="brand-subtitle">Applied and Probabilistic Machine Learning Lab</span>
           </span>
         </a>
         <nav>
           <a href="{{ '/people/' | absolute_url }}">people</a>
           <a href="{{ '/publications/' | absolute_url }}">publications</a>
           <a href="{{ '/news/' | absolute_url }}">news</a>
+          <!-- Calendar is intentionally available from the homepage callout only. -->
           <a href="{{ '/gallery/' | absolute_url }}">gallery</a>
+          <a href="{{ '/teaching/' | absolute_url }}">teaching</a>
           <a href="{{ '/join/' | absolute_url }}">join</a>
         </nav>
       </div>
