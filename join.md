@@ -18,7 +18,7 @@ permalink: /join/
     <ul>
       <li>Send CV, transcript, and a short statement of purpose.</li>
       <li>Use subject: <strong>[A Pro Lab. Application] Your Name</strong></li>
-      <li>Email: <strong>mgyukim@kookmin.ac.kr</strong></li>
+      <li>Email: <strong><a href="mailto:{{ site.email }}">{{ site.email }}</a></strong></li>
     </ul>
 
     <h3>Application template</h3>
