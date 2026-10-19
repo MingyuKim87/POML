@@ -4,4 +4,5 @@ authors: "Jun-Seong Kim*, Mingyu Kim*, Geon-U Kim, Tae-Hyun Oh† and Jin-Hwa Ki
 year: 2025
 venue: "International Conference on Robotics & Automation (ICRA) 2025, Atlanta.<br>IEEE Robotics and Automation Letters, 2024"
 paper: "https://doi.org/10.1109/LRA.2024.3460419"
+authorship: first
 ---

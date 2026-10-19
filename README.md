@@ -1,4 +1,4 @@
-# A_Pro Lab Website (GitHub Pages)
+# A Pro Lab Website (GitHub Pages)
 
 This repository is configured for a **database-free** GitHub Pages website using Markdown/YAML content files.
 
@@ -33,6 +33,10 @@ Management is done directly in repository files:
 - `_publications/` → publications
 - `_news/` → news
 - `_gallery/` → gallery images
+
+### Publication ordering
+
+Set `authorship` in each publication to `first` (including co-first), `corresponding`, or `coauthor` for Mingyu's role. First- and corresponding-author publications appear first, grouped by year with workshops listed separately. Co-authored publications follow, sorted by ascending `coauthor_order`; use this field to keep their intended display order across publication years. Optional `status` text, such as `To Appear`, appears below the title.
 
 ### Member format (OSI-style card)
 Use this template in `_people/your-name.md`:

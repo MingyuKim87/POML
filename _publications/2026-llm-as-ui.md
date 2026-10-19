@@ -4,4 +4,5 @@ authors: "Minjoo Choi, Jaekyeong Lee, Stein Ove Erikstad and Mingyu Kim"
 year: 2026
 venue: "Ocean Engineering"
 paper: https://www.sciencedirect.com/science/article/abs/pii/S0029801826011789
+authorship: corresponding
 ---

@@ -8,7 +8,7 @@ permalink: /publications/
     <h1>Publications</h1>
   </div>
 
-  {% assign pubs = site.publications | sort: 'year' | reverse %}
+  {% assign pubs = site.publications | where_exp: 'item', "item.authorship != 'coauthor'" | sort: 'year' | reverse %}
   {% assign years = pubs | map: 'year' | uniq %}
 
   {% for year in years %}
@@ -21,23 +21,7 @@ permalink: /publications/
   {% assign workshop_pubs = pubs | where: 'year', year | where: 'category', 'workshop' %}
 
   {% for pub in main_pubs %}
-    <article class="pub-entry">
-      <h3 class="pub-title">{{ pub.title }}</h3>
-      <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
-      <p class="pub-venue">{{ pub.venue }}</p>
-      {% if pub.paper or pub.code %}
-      <p class="pub-links">
-        {% if pub.paper %}
-          {% if pub.paper contains '://' %}
-            <a href="{{ pub.paper }}" target="_blank" rel="noopener">[paper]</a>
-          {% else %}
-            {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        {% endif %}
-        {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
-      </p>
-      {% endif %}
-    </article>
+    {% include publication-entry.html pub=pub %}
   {% endfor %}
 
   {% if workshop_pubs.size > 0 %}
@@ -47,25 +31,19 @@ permalink: /publications/
   </div>
 
   {% for pub in workshop_pubs %}
-    <article class="pub-entry">
-      <h3 class="pub-title">{{ pub.title }}</h3>
-      <p class="muted pub-authors">{{ pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
-      <p class="pub-venue">{{ pub.venue }}</p>
-      {% if pub.paper or pub.code %}
-      <p class="pub-links">
-        {% if pub.paper %}
-          {% if pub.paper contains '://' %}
-            <a href="{{ pub.paper }}" target="_blank" rel="noopener">[paper]</a>
-          {% else %}
-            {{ pub.paper | markdownify | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        {% endif %}
-        {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}
-      </p>
-      {% endif %}
-    </article>
+    {% include publication-entry.html pub=pub %}
   {% endfor %}
   {% endif %}
 
   {% endfor %}
+
+  {% assign coauthored_pubs = site.publications | where: 'authorship', 'coauthor' | sort: 'coauthor_order' %}
+  {% if coauthored_pubs.size > 0 %}
+  <div class="section-header">
+    <h2>Co-authored Publications</h2>
+  </div>
+  {% for pub in coauthored_pubs %}
+    {% include publication-entry.html pub=pub %}
+  {% endfor %}
+  {% endif %}
 </section>

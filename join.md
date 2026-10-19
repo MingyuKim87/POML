@@ -5,7 +5,7 @@ permalink: /join/
 
 <section class="section" style="margin-top:0;">
   <div class="section-header">
-    <h1>Join A_Pro Lab.</h1>
+    <h1>Join A Pro Lab.</h1>
   </div>
 
   <article class="card">

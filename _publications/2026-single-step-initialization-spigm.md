@@ -5,4 +5,5 @@ year: 2026
 category: workshop
 venue: "ICML 2026 Workshop SPIGM"
 paper: "https://openreview.net/forum?id=tiFsyANbEP"
+authorship: corresponding
 ---
