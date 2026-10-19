@@ -8,7 +8,7 @@ permalink: /publications/
     <h1>Publications</h1>
   </div>
 
-  {% assign pubs = site.publications | where_exp: 'item', "item.authorship != 'coauthor'" | sort: 'year' | reverse %}
+  {% assign pubs = site.publications | sort: 'year' | reverse %}
   {% assign years = pubs | map: 'year' | uniq %}
 
   {% for year in years %}
@@ -18,9 +18,12 @@ permalink: /publications/
   </div>
 
   {% assign main_pubs = pubs | where: 'year', year | where_exp: 'item', "item.category != 'workshop'" %}
+  {% assign lead_pubs = main_pubs | where_exp: 'item', "item.authorship != 'coauthor'" %}
+  {% assign coauthored_pubs = main_pubs | where: 'authorship', 'coauthor' | sort: 'coauthor_order' %}
+  {% assign ordered_main_pubs = lead_pubs | concat: coauthored_pubs %}
   {% assign workshop_pubs = pubs | where: 'year', year | where: 'category', 'workshop' %}
 
-  {% for pub in main_pubs %}
+  {% for pub in ordered_main_pubs %}
     {% include publication-entry.html pub=pub %}
   {% endfor %}
 
@@ -37,13 +40,4 @@ permalink: /publications/
 
   {% endfor %}
 
-  {% assign coauthored_pubs = site.publications | where: 'authorship', 'coauthor' | sort: 'coauthor_order' %}
-  {% if coauthored_pubs.size > 0 %}
-  <div class="section-header">
-    <h2>Co-authored Publications</h2>
-  </div>
-  {% for pub in coauthored_pubs %}
-    {% include publication-entry.html pub=pub %}
-  {% endfor %}
-  {% endif %}
 </section>

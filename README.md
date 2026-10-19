@@ -36,7 +36,7 @@ Management is done directly in repository files:
 
 ### Publication ordering
 
-Set `authorship` in each publication to `first` (including co-first), `corresponding`, or `coauthor` for Mingyu's role. First- and corresponding-author publications appear first, grouped by year with workshops listed separately. Co-authored publications follow, sorted by ascending `coauthor_order`; use this field to keep their intended display order across publication years. Optional `status` text, such as `To Appear`, appears below the title.
+All publications are grouped by `year`, newest first. Within each year's main publication list, `authorship: first` (including co-first) and `authorship: corresponding` papers appear before `authorship: coauthor` papers. Co-authored papers use ascending `coauthor_order` within that year, without a separate heading. The existing Workshop subsection follows each year's main list. The `year` field controls the listing year: PolarityVQA is listed under its 2026 acceptance year while its venue remains WACV 2027. Optional `status` text, such as `To Appear`, appears below the title.
 
 ### Member format (OSI-style card)
 Use this template in `_people/your-name.md`:
