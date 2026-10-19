@@ -5,4 +5,5 @@ year: 2023
 venue: "IEEE Access, Vol. 11, 2023"
 paper: "https://ieeexplore.ieee.org/document/10099458"
 code: "https://github.com/osilab-kaist/smac_exp"
+authorship: first
 ---

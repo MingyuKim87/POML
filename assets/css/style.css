@@ -347,6 +347,7 @@ pre {
 .pub-venue { font-family: var(--serif); }
 .pub-authors,
 .pub-venue,
+.pub-status,
 .pub-links { margin-bottom: 0.2rem; }
 
 .teaching-course-list {

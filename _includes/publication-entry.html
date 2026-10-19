@@ -1,5 +1,8 @@
 <article class="pub-entry">
   <h3 class="pub-title">{{ include.pub.title }}</h3>
+  {% if include.pub.status %}
+  <p class="muted pub-status"><em>{{ include.pub.status }}</em></p>
+  {% endif %}
   <p class="muted pub-authors">{{ include.pub.authors | replace: "Mingyu Kim", "<u>Mingyu Kim</u>" }}</p>
   <p class="pub-venue">{{ include.pub.venue }}</p>
   {% if include.pub.paper or include.pub.code %}

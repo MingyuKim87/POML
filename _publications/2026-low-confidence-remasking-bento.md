@@ -5,4 +5,5 @@ year: 2026
 category: workshop
 venue: "NeurIPS 2026 Workshop BeNTo / DiffuLM"
 paper: "https://openreview.net/forum?id=gewweL5yyJ"
+authorship: corresponding
 ---

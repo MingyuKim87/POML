@@ -5,4 +5,5 @@ year: 2024
 venue: "International Conference on Machine Learning (ICML) 2024, Vienna"
 paper: "https://arxiv.org/abs/2405.07857"
 code: "https://github.com/MingyuKim87/SynergyNeRF"
+authorship: first
 ---
