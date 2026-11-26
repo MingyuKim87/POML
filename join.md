@@ -1,0 +1,32 @@
+---
+title: Join
+permalink: /join/
+---
+
+<section class="section" style="margin-top:0;">
+  <div class="section-header">
+    <h1>Join A Pro Lab.</h1>
+  </div>
+
+  <article class="card">
+    <p>We welcome applications from students and interns by email.</p>
+    <ul>
+      <li><strong>Undergraduate Students:</strong> We warmly welcome your applications.</li>
+      <li><strong>Graduate Students:</strong> <strong>Please contact us only after your admission has been officially confirmed.</strong></li>
+    </ul>
+    <h3>How to apply</h3>
+    <ul>
+      <li>Send CV, transcript, and a short statement of purpose.</li>
+      <li>Use subject: <strong>[A Pro Lab. Application] Your Name</strong></li>
+      <li>Email: <strong><a href="mailto:{{ site.email }}">{{ site.email }}</a></strong></li>
+    </ul>
+
+    <h3>Application template</h3>
+    <pre><code>Name:
+Current affiliation:
+Degree / year:
+Research interests:
+Available period:
+Portfolio / website (Optional):</code></pre>
+  </article>
+</section>
